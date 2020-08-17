@@ -1,0 +1,25 @@
+listA = [1,2,3]
+result = []
+
+
+column = []
+column.append(' ')
+column.extend(listA)
+result.append(column)
+print(result)
+column.clear()
+
+for i in range(1,4):
+    
+    for j in range(1,4):
+        if i==j:
+            column.append(i)
+        column.append(i*j)
+        if j==3:
+            result.append(column)
+            column.clear()
+print(result)
+
+
+        
+    
